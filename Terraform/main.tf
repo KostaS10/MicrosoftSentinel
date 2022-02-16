@@ -1,12 +1,12 @@
 resource "azurerm_resource_group" "tfsentinel" {
-  name     = "tfsentinel"
-  location = "westeurope"
+  name     = var.resource_group_name
+  location = var.location
 }
 
 resource "azurerm_log_analytics_workspace" "tflaw" {
-  name                = "tfsentinel-law"
+  name                = var.sentinel_law_name
   location            = azurerm_resource_group.tfsentinel.location
   resource_group_name = azurerm_resource_group.tfsentinel.name
   sku                 = "PerGB2018"
-  retention_in_days   = 90
+  retention_in_days   = var.sentinel_law_retention
 }

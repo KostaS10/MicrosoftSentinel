@@ -1,5 +1,5 @@
 variable "resource_group_name" {
-    default = "rg-testSentinel"
+    default = "rg-sentinel-euw"
 }
 
 variable "location" {
@@ -7,7 +7,7 @@ variable "location" {
 }
 
 variable "sentinel_law_name" {
-    default = "law-sentinel"
+    default = "law-sentinel-euw"
 }
 
 variable "sentinel_law_retention" {

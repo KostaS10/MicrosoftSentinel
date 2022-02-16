@@ -26,5 +26,5 @@ resource "azurerm_log_analytics_solution" "tfsentinel" {
 
 resource "azurerm_sentinel_data_connector_azure_security_center" "tfmdcconnector" {
   name                       = var.sentinel_mdc_connector_name
-  log_analytics_workspace_id = azurerm_log_analytics_solution.tflaw.workspace_resource_id
+  log_analytics_workspace_id = azurerm_log_analytics_solution.tfsentinel.workspace_resource_id
 }

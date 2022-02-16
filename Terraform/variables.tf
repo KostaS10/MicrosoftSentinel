@@ -13,3 +13,7 @@ variable "sentinel_law_name" {
 variable "sentinel_law_retention" {
     default = 90
 }
+
+variable "sentinel_mdc_connector_name" {
+    default = "mdc-connector"
+}

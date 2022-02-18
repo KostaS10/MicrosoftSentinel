@@ -1,3 +1,3 @@
 # MicrosoftSentinel
 
-Repository contains Terraform scripts for deploying Microsoft Sentinel
+Repository contains Terraform/Bicep templates for deploying Microsoft Sentinel
